@@ -25,8 +25,8 @@ gitee上有镜像项目：
 TODO :
 - [x] 上传项目
 - [x] 打包至pypi库
-- [ ] 上传标注文档在wiki里
-
+- [x] 上传标注文档在wiki里
+- [ ] 添加关键词功能
 
 ## 准确率报告
 ### 1. 总体准确率
@@ -39,7 +39,8 @@ TODO :
 | envAlbert | 85.2 |
 | Bert | 89.4 |
 | Bert-large | 89.8 |
-envBert-Large不如Bert，可能是数据集仍然相对比较小，大模型容易过拟合，且envBert-large预训练的时间不如envBert长。
+
+envBert-Large不如Bert，可能原因是1. 数据集仍然相对比较小，2. 大模型容易过拟合，3. envBert-large预训练的时间不如envBert长。
 
 
 
@@ -63,7 +64,7 @@ cd envpos && python setup.py install && cd ..
 ```
 
 ### 2. 词法分析
-进行推理：
+- 进行推理：（默认是albert模型，因为体积小，推理速度快）
 ```python
 import envpos
 s = '''
@@ -72,15 +73,13 @@ s = '''
 envpos.cut(s)
 ```
 
-可视化
+- 可视化
 ```python
 envpos.viz(s)
 ```
 ![](fig/viz.png)
 
-切换bert模型
-
-进行多句推理：
+- 进行多句推理：
 ```python
 s = [
     "（三）城镇绿色节能改造工程。全面推进城镇绿色规划、绿色建设、绿色运行管理，推动低碳城市、韧性城市、海绵城市、“无废城市”建设。",
@@ -89,6 +88,15 @@ s = [
 ]
 result = envpos.cut(s)
 ```
+
+- 切换bert模型，Bert模型准确率比albert高5个点以上。
+权重下载地址：
+链接：https://pan.baidu.com/s/1hYEJUM04UdHLKCnnAGIijQ   
+提取码：gqyz   
+```python
+envpos.change_bert("bert模型权重所在文件夹")
+```
+
 
 ### 3. 依赖ddparser进行句法分析
 安装ddparser
