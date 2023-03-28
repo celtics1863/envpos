@@ -28,6 +28,11 @@ TODO :
 - [x] 上传标注文档在wiki里
 - [ ] 添加关键词功能
 
+对于标注策略，本项目构建过程中参考了GB/T 20532-2006《信息处理用现代汉语词类标记规范》、北京大学《现代汉语语料库加工规范》、微软亚洲研究院《中文文本标注规范》、斯坦福CTB树库标注规范等，积累了详细且丰富（目前整理后超过30页）的标注手册，会逐渐更新在项目的wiki里：
+- [gitee](https://gitee.com/bihuaibin/envpos/wikis/环境词法标注手册)
+- [github](https://github.com/celtics1863/envpos/wikis/环境词法标注手册)
+
+
 ## 准确率报告
 ### 1. 总体准确率
 使用$F_1$作为评价指标
@@ -47,7 +52,7 @@ envBert-Large不如Bert，可能原因是1. 数据集仍然相对比较小，2. 
 ## 使用方式 QuickStart
 
 ### 1. 安装
-先安装torch和transformers,datasets，
+先安装torch和transformers,
 torch需要根据gpu和cuda版本选择合适的版本，如果不熟悉这些，可以先尝试用cpu版本的。
 ```bash
 pip install torch
@@ -90,9 +95,9 @@ result = envpos.cut(s)
 ```
 
 - 切换bert模型，Bert模型准确率比albert高5个点以上。
-权重下载地址：
-链接：https://pan.baidu.com/s/1hYEJUM04UdHLKCnnAGIijQ   
-提取码：gqyz   
+权重下载地址：  
+链接：https://pan.baidu.com/s/1hYEJUM04UdHLKCnnAGIijQ     
+提取码：gqyz     
 ```python
 envpos.change_bert("bert模型权重所在文件夹")
 ```
