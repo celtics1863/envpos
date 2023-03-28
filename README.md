@@ -22,8 +22,28 @@
 gitee上有镜像项目：
 [envpos](https://gitee.com/bihuaibin/envpos)
 
+- TODO 
+- [x] 上传项目
+- [] 打包至pypi库
+- [] 上传标注文档在wiki里
 
-## 使用方式
+
+## 准确率报告
+### 1. 总体准确率
+使用$F_1$作为评价指标
+
+| 模型 | $F_1$ | 
+| ---- | ---- |
+| envBert | 91.7 |
+| envBert-large | 91.0 |
+| envAlbert | 85.2 |
+| Bert | 89.4 |
+| Bert-large | 89.8 |
+envBert-Large不如Bert，可能是数据集比较小，大模型容易过拟合，且envBert-large预训练的时间不如envBert长。
+
+
+
+## 使用方式 QuickStart
 
 先安装torch和transformers,datasets，
 torch需要根据gpu和cuda版本选择合适的版本，如果不熟悉这些，可以先尝试用cpu版本的。
@@ -35,20 +55,30 @@ transformers的依赖比较多，如果出现`import error`，大概率是transf
 
 
 再安装envpos
-```bash
-pip install envpos
+```
+git clone https://gitee.com/bihuaibin/envpos
+cd envpos && python setup.py install && cd ..
 ```
 
 
 进行推理：
-```bash
+```python
 import envpos
 s = '''
 （一）重点行业绿色升级工程。以钢铁、有色金属、建材、石化化工等行业为重点，推进节能改造和污染物深度治理。推广高效精馏系统、高温高压干熄焦、富氧强化熔炼等节能技术，鼓励将高炉—转炉长流程炼钢转型为电炉短流程炼钢。
 '''
-
 envpos.cut(s)
 ```
+
+可视化
+```python
+envpos.viz(s)
+```
+![](fig/viz.png)
+
+切换bert模型
+
+
 
 详细的使用方式见`使用示例.ipynb`
 
@@ -65,7 +95,7 @@ envpos.cut(s)
 ![envpos结果](fig/compare.png)
 
 
-与DDparser结合：
+与DDparser结合进行句法分析：
 ![](fig/ddparser.svg)
 
 

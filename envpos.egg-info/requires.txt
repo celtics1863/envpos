@@ -1,7 +1,7 @@
-pytorch>=1.8
-transformers>=3.0
-datasets
+huggingface_hub
+packaging
 palettable
 pytorch-crf
 numpy
 pandas
+tqdm

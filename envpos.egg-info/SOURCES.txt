@@ -1,4 +1,6 @@
 LICENSE
+MANIFEST.in
+README.md
 setup.py
 envpos/__init__.py
 envpos.egg-info/PKG-INFO
@@ -7,6 +9,9 @@ envpos.egg-info/dependency_links.txt
 envpos.egg-info/requires.txt
 envpos.egg-info/top_level.txt
 envpos/files/__init__.py
+envpos/files/pretrained_models/pos-albert/config.json
+envpos/files/pretrained_models/pos-albert/pytorch_model.bin
+envpos/files/pretrained_models/pos-albert/vocab.txt
 envpos/models/__init__.py
 envpos/models/albert_ner.py
 envpos/models/bert_base.py

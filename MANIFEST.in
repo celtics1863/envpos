@@ -1,0 +1,4 @@
+include envpos/files/pretrained_models/pos-albert/pytorch_model.bin
+include envpos/files/pretrained_models/pos-albert/vocab.txt
+include envpos/files/pretrained_models/pos-albert/config.json
+
