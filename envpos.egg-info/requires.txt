@@ -1,0 +1,7 @@
+pytorch>=1.8
+transformers>=3.0
+datasets
+palettable
+pytorch-crf
+numpy
+pandas

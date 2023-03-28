@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: envpos
+Version: 0.5
+Summary: 政策/环境领域文本词性标注、术语、专有名词识别工具
+Home-page: https://github.com/celtics1863/envpos
+Author: bihuaibin
+Author-email: bi.huaibin@foxmail.com
+License-File: LICENSE
