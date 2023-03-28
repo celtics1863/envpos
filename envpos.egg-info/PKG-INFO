@@ -1,8 +1,14 @@
 Metadata-Version: 2.1
 Name: envpos
-Version: 0.51
-Summary: 政策/环境领域文本词性标注、术语、专有名词识别工具
+Version: 0.6
+Summary: 环境/政策领域文本词性标注、术语、专有名词识别工具
 Home-page: https://github.com/celtics1863/envpos
 Author: bihuaibin
 Author-email: bi.huaibin@foxmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
 License-File: LICENSE
+
+环境/政策领域文本词法分析工具，支持词性识别/可视化/依存分析等功能
+

@@ -22,10 +22,10 @@
 gitee上有镜像项目：
 [envpos](https://gitee.com/bihuaibin/envpos)
 
-- TODO 
+TODO :
 - [x] 上传项目
-- [] 打包至pypi库
-- [] 上传标注文档在wiki里
+- [x] 打包至pypi库
+- [ ] 上传标注文档在wiki里
 
 
 ## 准确率报告
@@ -39,17 +39,19 @@ gitee上有镜像项目：
 | envAlbert | 85.2 |
 | Bert | 89.4 |
 | Bert-large | 89.8 |
-envBert-Large不如Bert，可能是数据集比较小，大模型容易过拟合，且envBert-large预训练的时间不如envBert长。
+envBert-Large不如Bert，可能是数据集仍然相对比较小，大模型容易过拟合，且envBert-large预训练的时间不如envBert长。
 
 
 
 ## 使用方式 QuickStart
 
+### 1. 安装
 先安装torch和transformers,datasets，
 torch需要根据gpu和cuda版本选择合适的版本，如果不熟悉这些，可以先尝试用cpu版本的。
 ```bash
 pip install torch
-pip install transformers datasets
+pip install transformers
+pip install envpos
 ```
 transformers的依赖比较多，如果出现`import error`，大概率是transformers的依赖没有装上，pip install 装上即可
 
@@ -60,7 +62,7 @@ git clone https://gitee.com/bihuaibin/envpos
 cd envpos && python setup.py install && cd ..
 ```
 
-
+### 2. 词法分析
 进行推理：
 ```python
 import envpos
@@ -78,7 +80,32 @@ envpos.viz(s)
 
 切换bert模型
 
+进行多句推理：
+```python
+s = [
+    "（三）城镇绿色节能改造工程。全面推进城镇绿色规划、绿色建设、绿色运行管理，推动低碳城市、韧性城市、海绵城市、“无废城市”建设。",
+    "（四）交通物流节能减排工程。推动绿色铁路、绿色公路、绿色港口、绿色航道、绿色机场建设，有序推进充换电、加注（气）、加氢、港口机场岸电等基础设施建设。",
+    "（八）煤炭清洁高效利用工程。要立足以煤为主的基本国情，坚持先立后破，严格合理控制煤炭消费增长，抓好煤炭清洁高效利用，推进存量煤电机组节煤降耗改造、供热改造、灵活性改造“三改联动”，持续推动煤电机组超低排放改造。"
+]
+result = envpos.cut(s)
+```
 
+### 3. 依赖ddparser进行句法分析
+安装ddparser
+```bash
+pip install ddparser
+```
+依存关系分析:
+```python
+s = "要立足以煤为主的基本国情，坚持先立后破，严格合理控制煤炭消费增长"
+envpos.dp_cut(s)
+```
+
+可视化：
+```python
+s = "要立足以煤为主的基本国情，坚持先立后破，严格合理控制煤炭消费增长"
+envpos.dp_viz(s)
+```
 
 详细的使用方式见`使用示例.ipynb`
 

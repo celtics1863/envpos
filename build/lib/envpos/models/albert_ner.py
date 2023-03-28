@@ -5,7 +5,6 @@ import torch.nn.functional as F
 from torch import nn #for nn.Dropout nn.LSTM nn.Linear
 from torchcrf import CRF
 from transformers import AlbertPreTrainedModel,AlbertModel,AlbertConfig
-# from ..tokenizers import WoBertTokenizer
 from .ner_base import NERBase
 
 class AlbertCRF(AlbertPreTrainedModel):

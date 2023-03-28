@@ -5,6 +5,9 @@ from .models import *
 from .visualizers import *
 from .files import FileConfig
 from typing import *
+import warnings
+warnings.filterwarnings("ignore", message=".*FutureWarning:.*")
+
 
 LABEL_MAPPING = {
             "med":"环境介质",
