@@ -44,7 +44,7 @@ s = [
 result = envpos.cut(s)
 ```
 
-- 切换bert模型，Bert模型准确率比albert高5个点以上。
+- 切换bert模型，Bert模型准确率比albert高5个点以上，建议在硬件支持的情况下，优先使用bert模型。
 权重下载地址：  
 链接：https://pan.baidu.com/s/1hYEJUM04UdHLKCnnAGIijQ     
 提取码：gqyz     
