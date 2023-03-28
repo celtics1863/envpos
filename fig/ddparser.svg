@@ -1,0 +1,86 @@
+
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="zh" id="0" class="displacy" width="1100" height="362.0" direction="left" style="max-width: none; height: 362.0px; color: #000000; background: #ffffff; font-family: Arial; direction: left">
+    <text class="displacy-token" fill="currentColor" text-anchor="middle" y="272.0">
+        <tspan class="displacy-word" fill="currentColor" x="50">HEAD</tspan>
+        <tspan class="displacy-tag" dy="2em" fill="currentColor" x="50">HEAD</tspan>
+    </text>
+    
+    <text class="displacy-token" fill="currentColor" text-anchor="middle" y="272.0">
+        <tspan class="displacy-word" fill="currentColor" x="200">哪些</tspan>
+        <tspan class="displacy-tag" dy="2em" fill="currentColor" x="200">r</tspan>
+    </text>
+    
+    <text class="displacy-token" fill="currentColor" text-anchor="middle" y="272.0">
+        <tspan class="displacy-word" fill="green" x="350">农药</tspan>
+        <tspan class="displacy-tag" dy="2em" fill="green" x="350">env</tspan>
+    </text>
+    
+    <text class="displacy-token" fill="currentColor" text-anchor="middle" y="272.0">
+        <tspan class="displacy-word" fill="currentColor" x="500">属于</tspan>
+        <tspan class="displacy-tag" dy="2em" fill="currentColor" x="500">v</tspan>
+    </text>
+    
+    <text class="displacy-token" fill="currentColor" text-anchor="middle" y="272.0">
+        <tspan class="displacy-word" fill="red" x="650">二硫代氨基甲酸盐类</tspan>
+        <tspan class="displacy-tag" dy="2em" fill="red" x="650">pol</tspan>
+    </text>
+    
+    <text class="displacy-token" fill="currentColor" text-anchor="middle" y="272.0">
+        <tspan class="displacy-word" fill="currentColor" x="800">啊</tspan>
+        <tspan class="displacy-tag" dy="2em" fill="currentColor" x="800">xc</tspan>
+    </text>
+    
+    <text class="displacy-token" fill="currentColor" text-anchor="middle" y="272.0">
+        <tspan class="displacy-word" fill="currentColor" x="950">?</tspan>
+        <tspan class="displacy-tag" dy="2em" fill="currentColor" x="950">w</tspan>
+    </text>
+    
+    <g class="displacy-arrow">
+        <path class="displacy-arc" id="arrow-0-0" stroke-width="2px" d="M212,227.0 212,202.0 344.0,202.0 344.0,227.0" fill="none" stroke="currentColor"/>
+        <text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
+            <textPath xlink:href="#arrow-0-0" class="displacy-label" startOffset="50%" side="left" fill="currentColor" text-anchor="middle">ATT</textPath>
+        </text>
+        <path class="displacy-arrowhead" d="M344.0,229.0 L348.0,221.0 340.0,221.0" fill="currentColor"/>
+    </g>
+    
+    <g class="displacy-arrow">
+        <path class="displacy-arc" id="arrow-0-1" stroke-width="2px" d="M362,227.0 362,202.0 494.0,202.0 494.0,227.0" fill="none" stroke="currentColor"/>
+        <text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
+            <textPath xlink:href="#arrow-0-1" class="displacy-label" startOffset="50%" side="left" fill="currentColor" text-anchor="middle">SBV</textPath>
+        </text>
+        <path class="displacy-arrowhead" d="M494.0,229.0 L498.0,221.0 490.0,221.0" fill="currentColor"/>
+    </g>
+    
+    <g class="displacy-arrow">
+        <path class="displacy-arc" id="arrow-0-2" stroke-width="2px" d="M62,227.0 62,177.0 497.0,177.0 497.0,227.0" fill="none" stroke="currentColor"/>
+        <text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
+            <textPath xlink:href="#arrow-0-2" class="displacy-label" startOffset="50%" side="left" fill="currentColor" text-anchor="middle">HED</textPath>
+        </text>
+        <path class="displacy-arrowhead" d="M497.0,229.0 L501.0,221.0 493.0,221.0" fill="currentColor"/>
+    </g>
+    
+    <g class="displacy-arrow">
+        <path class="displacy-arc" id="arrow-0-3" stroke-width="2px" d="M512,227.0 512,202.0 644.0,202.0 644.0,227.0" fill="none" stroke="currentColor"/>
+        <text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
+            <textPath xlink:href="#arrow-0-3" class="displacy-label" startOffset="50%" side="left" fill="currentColor" text-anchor="middle">VOB</textPath>
+        </text>
+        <path class="displacy-arrowhead" d="M644.0,229.0 L648.0,221.0 640.0,221.0" fill="currentColor"/>
+    </g>
+    
+    <g class="displacy-arrow">
+        <path class="displacy-arc" id="arrow-0-4" stroke-width="2px" d="M512,227.0 512,177.0 797.0,177.0 797.0,227.0" fill="none" stroke="currentColor"/>
+        <text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
+            <textPath xlink:href="#arrow-0-4" class="displacy-label" startOffset="50%" side="left" fill="currentColor" text-anchor="middle">MT</textPath>
+        </text>
+        <path class="displacy-arrowhead" d="M797.0,229.0 L801.0,221.0 793.0,221.0" fill="currentColor"/>
+    </g>
+    
+    <g class="displacy-arrow">
+        <path class="displacy-arc" id="arrow-0-5" stroke-width="2px" d="M512,227.0 512,152.0 950.0,152.0 950.0,227.0" fill="none" stroke="currentColor"/>
+        <text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
+            <textPath xlink:href="#arrow-0-5" class="displacy-label" startOffset="50%" side="left" fill="currentColor" text-anchor="middle">MT</textPath>
+        </text>
+        <path class="displacy-arrowhead" d="M950.0,229.0 L954.0,221.0 946.0,221.0" fill="currentColor"/>
+    </g>
+    </svg>
+    

@@ -19,6 +19,9 @@
 |      |                |                |        |         |       |        |         |      |       |                |                |      |                    |
 
 
+gitee上有镜像项目：
+[envpos](https://gitee.com/bihuaibin/envpos)
+
 
 ## 使用方式
 
@@ -26,12 +29,12 @@
 torch需要根据gpu和cuda版本选择合适的版本，如果不熟悉这些，可以先尝试用cpu版本的。
 ```bash
 pip install torch
-pip install transformers,datasets
+pip install transformers datasets
 ```
-transformers的依赖比较多，如果出现`import error`，大概率是transformers的依赖没有装上，装上即可
+transformers的依赖比较多，如果出现`import error`，大概率是transformers的依赖没有装上，pip install 装上即可
 
 
-再按照envpos
+再安装envpos
 ```bash
 pip install envpos
 ```
@@ -58,14 +61,12 @@ envpos.cut(s)
 
 
 
-和LAC制作词云对比
-
-![envpos结果](fig/wc2.png)
-![LAC结果](fig/wc_lac.png)
+和LAC制作词云对比，envpos可以识别出长词，不会将长词切分为散串
+![envpos结果](fig/compare.png)
 
 
 与DDparser结合：
-![](fig/ddparser.png)
+![](fig/ddparser.svg)
 
 
 ## liscence
