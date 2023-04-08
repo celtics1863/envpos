@@ -68,13 +68,13 @@ class POS:
     def use_cuda(self):
         self.model.set_device("cuda")
 
-    def cut(self,text:Union[str, List[str]]):
+    def cut(self,text:Union[str, List[str]],auto_group=True, **kwargs):
         '''
         str 或者 List[str]
             对str，返回Tuple(words, pos)
             对List[str]，返回[List[Tuple(words, pos )]
         '''
-        result = self.model(text, print_result=False)
+        result = self.model(text, print_result=False,auto_group=auto_group,**kwargs)
         if isinstance(text, str):
             return result[0]
         else:

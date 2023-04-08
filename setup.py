@@ -7,7 +7,7 @@ long_description = "环境/政策领域文本词法分析工具，支持词性�
 
 setup(
     name="envpos",
-    version="0.6",
+    version="0.7",
     author="bihuaibin",
     author_email="bi.huaibin@foxmail.com",
     description="环境/政策领域文本词性标注、术语、专有名词识别工具",

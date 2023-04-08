@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: envpos
-Version: 0.6
+Version: 0.7
 Summary: 环境/政策领域文本词性标注、术语、专有名词识别工具
 Home-page: https://github.com/celtics1863/envpos
 Author: bihuaibin
